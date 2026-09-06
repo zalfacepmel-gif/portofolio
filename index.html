@@ -3,13 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portofolio - Zalfa Adyarrafi</title>
+        <meta name="description" content="Portofolio Zalfaa Adyarrafi, pelajar RPL SMK N 1 Dukuhturi yang tertarik pada web development, UI, dan organisasi.">
+        <title>Portofolio - Zalfaa Adyarrafi</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <symbol id="icon-menu" viewBox="0 0 24 24">
                 <path d="M4 6h16M4 12h16M4 18h16" />
+            </symbol>
+            <symbol id="icon-x" viewBox="0 0 24 24">
+                <path d="M18 6 6 18M6 6l12 12" />
+            </symbol>
+            <symbol id="icon-link" viewBox="0 0 24 24">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+            </symbol>
+            <symbol id="icon-arrow" viewBox="0 0 24 24">
+                <path d="M5 12h14M13 5l7 7-7 7" />
             </symbol>
             <symbol id="icon-users" viewBox="0 0 24 24">
                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
@@ -68,424 +82,350 @@
                 <path d="m22 8-6 4 6 4z" />
                 <rect width="14" height="12" x="2" y="6" rx="2" />
             </symbol>
-            <symbol id="icon-whatsapp" viewBox="0 0 24 24">
-                <path fill="currentColor" stroke="none" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.33 4.96L2 22l5.25-1.38a9.88 9.88 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.16h-.01a8.22 8.22 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23a8.24 8.24 0 0 1 0 16.48zm4.52-6.16c-.25-.13-1.47-.73-1.7-.81-.23-.08-.39-.13-.56.13-.16.25-.64.81-.78.98-.14.16-.29.19-.54.06-.25-.13-1.05-.39-2-1.24-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.42.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.36 1 2.52c.12.16 1.72 2.62 4.17 3.67.58.25 1.04.4 1.39.51.58.18 1.11.16 1.53.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.29z" />
-            </symbol>
             <symbol id="icon-mail" viewBox="0 0 24 24">
                 <rect width="20" height="16" x="2" y="4" rx="2" />
                 <path d="m22 7-10 6L2 7" />
+            </symbol>
+            <symbol id="icon-phone" viewBox="0 0 24 24">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.78 19.78 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.78 19.78 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.91.33 1.8.63 2.65a2 2 0 0 1-.45 2.11L8 9.77a16 16 0 0 0 6.23 6.23l1.29-1.29a2 2 0 0 1 2.11-.45c.85.3 1.74.51 2.65.63A2 2 0 0 1 22 16.92z" />
             </symbol>
             <symbol id="icon-instagram" viewBox="0 0 24 24">
                 <rect width="18" height="18" x="3" y="3" rx="5" />
                 <circle cx="12" cy="12" r="4" />
                 <circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none" />
             </symbol>
-            <symbol id="icon-tiktok" viewBox="0 0 24 24">
-                <path fill="currentColor" stroke="none" d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.3 0 .6.05.88.14V9.4a6.34 6.34 0 0 0-.88-.06A6.33 6.33 0 0 0 5 20.11a6.34 6.34 0 0 0 10.82-4.48V8.68a8.22 8.22 0 0 0 4.77 1.52V6.69z" />
+            <symbol id="icon-music" viewBox="0 0 24 24">
+                <path d="M9 18V5l12-2v13" />
+                <circle cx="6" cy="18" r="3" />
+                <circle cx="18" cy="16" r="3" />
             </symbol>
         </svg>
-        <header>
-            <nav class="navbar">
-                <div class="logo">RAPIWW<span>.</span></div>
-                <ul class="nav-menu">
-                    <li>
-                        <a href="#tentang">Tentang Saya</a>
-                    </li>
-                    <li>
-                        <a href="#soft-skills">Soft Skills</a>
-                    </li>
-                    <li>
-                        <a href="#hard-skills">Hard Skills</a>
-                    </li>
-                    <li>
-                        <a href="#pengalaman">Pengalaman</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <div class="menu-toggle">
-                    <svg class="icon" aria-hidden="true">
+
+        <a class="skip-link" href="#tentang">Lewati ke konten</a>
+
+        <header class="site-header">
+            <nav class="navbar" aria-label="Navigasi utama">
+                <a href="#home" class="logo" aria-label="Kembali ke bagian utama">RAPIWW<span>.</span></a>
+                <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="nav-menu">
+                    <svg class="icon icon-menu" aria-hidden="true">
                         <use href="#icon-menu"></use>
                     </svg>
-                </div>
+                    <svg class="icon icon-close" aria-hidden="true">
+                        <use href="#icon-x"></use>
+                    </svg>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#pendidikan">Pendidikan</a></li>
+                    <li><a href="#soft-skills">Soft Skills</a></li>
+                    <li><a href="#hard-skills">Hard Skills</a></li>
+                    <li><a href="#pengalaman">Pengalaman</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
             </nav>
         </header>
-        <!-- ========================================
-        HERO
-        ========================================= -->
-        <section class="hero">
-            <div class="hero-text">
-                <p class="hello">Halo, Perkenalkan Saya</p>
-                <h1>Zalfaa Adyarrafi</h1>
-                <h2>Pelajar</h2>
-                <p class="hero-description">Saya adalah pelajar SMK N 1 Dukuhturi jurusan Rekayasa Perangkat Lunak yang memiliki ketertarikan pada bidang pemrograman web.</p>
-                <a href="#tentang" class="btn">Tentang Saya</a>
-            </div>
-            <div class="hero-image">
-                <div class="profile-circle">
-                    <img src="./gambar/WhatsApp Image 2026-08-09 at 9.31.30 PM.jpeg" alt="Foto Zalfa Adyarrafi">
+
+        <main>
+            <section id="home" class="hero section-block">
+                <div class="hero-content">
+                    <p class="eyebrow">Pelajar RPL - Web Enthusiast</p>
+                    <h1>Zalfaa Adyarrafi</h1>
+                    <p class="hero-description">
+                        Pelajar SMK N 1 Dukuhturi jurusan Rekayasa Perangkat Lunak yang tertarik pada web development,
+                        desain UI, dan kerja tim dalam project digital.
+                    </p>
+                    <div class="hero-actions" aria-label="Aksi utama">
+                        <a href="#pengalaman" class="btn btn-primary">
+                            Lihat Project
+                            <svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-ghost">Hubungi Saya</a>
+                    </div>
+                    <div class="hero-stats" aria-label="Ringkasan">
+                        <div>
+                            <strong>RPL</strong>
+                            <span>Jurusan</span>
+                        </div>
+                        <div>
+                            <strong>7+</strong>
+                            <span>Pengalaman</span>
+                        </div>
+                        <div>
+                            <strong>9</strong>
+                            <span>Skill Teknis</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="tentang" class="section">
-            <div class="section-title">
-                <p>Tentang Saya</p>
-                <h2>Latar Belakang</h2>
-            </div>
-            <div class="about">
-                <div class="about-image">
+
+                <div class="hero-visual" aria-label="Foto profil">
+                    <div class="profile-card">
+                        <img src="./gambar/WhatsApp Image 2026-08-09 at 9.31.30 PM.jpeg" alt="Foto Zalfaa Adyarrafi">
+                        <!--<div class="profile-badge">
+                            <span>Available</span>
+                            <strong>Portfolio</strong>
+                        </div>
+                    -->
+                    </div>
+                </div>
+            </section>
+
+            <section id="tentang" class="section section-block">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Tentang Saya</p>
+                        <h2>Latar Belakang</h2>
+                    </div>
+                </div>
+
+                <div class="about-grid">
                     <div class="about-photo">
-                        <img src="./gambar/panutan.jpg" alt="Foto Zalfa">
+                        <img src="./gambar/r.jpeg" alt="Foto Zalfaa">
+                    </div>
+                    <div class="about-panel">
+                        <h3>Halo! Saya Zalfaa Adyarrafi</h3>
+                        <p>
+                            Saya adalah pelajar SMK N 1 Dukuhturi jurusan RPL. Saya suka membuat tampilan website yang
+                            rapi, nyaman dilihat, dan mudah dipakai.
+                        </p>
+                        <p>
+                            Selain belajar pemrograman web, saya aktif di organisasi Pramuka dan ekstrakurikuler PMR.
+                            Pengalaman tersebut membantu saya terbiasa bekerja sama, disiplin, dan bertanggung jawab.
+                        </p>
+                        <div class="info-list">
+                            <div><span>Nama</span><strong>Zalfaa Adyarrafi</strong></div>
+                            <div><span>Status</span><strong>Pelajar</strong></div>
+                            <div><span>Sekolah</span><strong>SMK N 1 Dukuhturi</strong></div>
+                            <div><span>Jurusan</span><strong>Rekayasa Perangkat Lunak</strong></div>
+                        </div>
                     </div>
                 </div>
-                <div class="about-text">
-                    <h3>Halo! Saya Zalfaa Adyarrafi</h3>
-                    <p>Saya adalah pelajar SMK N 1 Dukuhturi jurusan RPL (Rekayasa Perangkat Lunak).</p>
-                    <p>Saya memiliki keahlian di bidang pemrograman web. Saya juga aktif di organisasi Pramuka dan ekstrakurikuler PMR.</p>
-                    <div class="info">
-                        <p>
-                            <strong>Nama:</strong>
-                            Zalfa Adyarrafi
-                        </p>
-                        <p>
-                            <strong>Status:</strong>
-                            Pelajar
-                        </p>
-                        <p>
-                            <strong>Sekolah:</strong>
-                            SMK N 1 Dukuhturi
-                        </p>
-                        <p>
-                            <strong>Jurusan:</strong>
-                            Rekayasa Perangkat Lunak
-                        </p>
+            </section>
+
+            <section id="pendidikan" class="section section-block muted-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Riwayat Pendidikan</p>
+                        <h2>Pendidikan</h2>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="education-section">
-            <div class="section">
-                <div class="section-title">
-                    <p>Riwayat Pendidikan</p>
-                    <h2>Pendidikan</h2>
-                </div>
-                <div class="education-container">
-                    <div class="education-card">
+
+                <div class="education-grid">
+                    <article class="education-card">
                         <span>2015 - 2019</span>
                         <h3>SD N 3 Dukuhsalam</h3>
-                    </div>
-                    <div class="education-card">
+                    </article>
+                    <article class="education-card">
                         <span>2019 - 2021</span>
                         <h3>SD N 1 Balapulang</h3>
-                    </div>
-                    <div class="education-card">
+                    </article>
+                    <article class="education-card">
                         <span>2021 - 2024</span>
                         <h3>SMP N 1 Balapulang</h3>
-                    </div>
-                    <div class="education-card">
+                    </article>
+                    <article class="education-card highlight-card">
                         <span>2024 - Sekarang</span>
-                        <h3>SMK N 1 Dukuhturi/h3>
+                        <h3>SMK N 1 Dukuhturi</h3>
                         <p>Rekayasa Perangkat Lunak</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="soft-skills" class="section section-block">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Kemampuan Personal</p>
+                        <h2>Soft Skills</h2>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="soft-skills" class="section skills-section">
-            <div class="section-title">
-                <p>Kemampuan</p>
-                <h2>Soft Skills</h2>
-            </div>
-            <div class="skills-container">
-                <!-- KERJA SAMA -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <svg class="icon" aria-hidden="true">
-                            <use href="#icon-users"></use>
-                        </svg>
+
+                <div class="skills-grid soft-grid">
+                    <article class="skill-card">
+                        <div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#icon-users"></use></svg></div>
+                        <h3>Kerja Sama</h3>
+                        <p>Mampu bekerja sama dengan baik dalam sebuah tim.</p>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#icon-message"></use></svg></div>
+                        <h3>Komunikasi</h3>
+                        <p>Mampu menyampaikan informasi dan berdiskusi dengan baik.</p>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg></div>
+                        <h3>Disiplin</h3>
+                        <p>Bertanggung jawab dalam menyelesaikan tugas dan pekerjaan.</p>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#icon-smile"></use></svg></div>
+                        <h3>Ramah</h3>
+                        <p>Mampu menjaga hubungan baik dengan orang lain.</p>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#icon-user-check"></use></svg></div>
+                        <h3>Mudah Didekati</h3>
+                        <p>Terbuka untuk berdiskusi dan bekerja sama.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="hard-skills" class="section section-block muted-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Kemampuan Teknis</p>
+                        <h2>Hard Skills</h2>
                     </div>
-                    <h3>Kerja Sama</h3>
-                    <p>Mampu bekerja sama dengan baik dalam sebuah tim.</p>
                 </div>
-                <!-- KOMUNIKASI -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <svg class="icon" aria-hidden="true">
-                            <use href="#icon-message"></use>
-                        </svg>
+
+                <div class="skills-grid hard-grid">
+                    <article class="skill-card"><div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#icon-code"></use></svg></div><h3>HTML</h3><p>Membuat struktur halaman website.</p></article>
+                    <article class="skill-card"><div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#icon-palette"></use></svg></div><h3>CSS</h3><p>Mendesain tampilan website yang responsif.</p></article>
+                    <article class="skill-card"><div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#icon-zap"></use></svg></div><h3>JavaScript</h3><p>Membuat website menjadi lebih interaktif.</p></article>
+                    <article class="skill-card"><div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#icon-terminal"></use></svg></div><h3>Python</h3><p>Memahami dasar logika pemrograman.</p></article>
+                    <article class="skill-card"><div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#icon-database"></use></svg></div><h3>MySQL</h3><p>Mengelola data dasar menggunakan database.</p></article>
+                    <article class="skill-card"><div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#icon-flame"></use></svg></div><h3>Laravel</h3><p>Membuat aplikasi web dan fitur CRUD.</p></article>
+                    <article class="skill-card"><div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#icon-blocks"></use></svg></div><h3>Bootstrap</h3><p>Membangun UI cepat dengan komponen siap pakai.</p></article>
+                    <article class="skill-card"><div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#icon-wind"></use></svg></div><h3>Tailwind</h3><p>Merapikan tampilan dengan utility class.</p></article>
+                    <article class="skill-card"><div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#icon-video"></use></svg></div><h3>Edit Video Pendek</h3><p>Mengedit konten dokumentasi dan media sosial.</p></article>
+                </div>
+            </section>
+
+            <section id="pengalaman" class="section section-block">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Perjalanan Saya</p>
+                        <h2>Pengalaman & Project</h2>
                     </div>
-                    <h3>Komunikasi</h3>
-                    <p>Mampu berkomunikasi dan menyampaikan informasi dengan baik.</p>
                 </div>
-                <!-- DISIPLIN -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <svg class="icon" aria-hidden="true">
-                            <use href="#icon-clock"></use>
-                        </svg>
-                    </div>
-                    <h3>Disiplin</h3>
-                    <p>Bertanggung jawab dalam menyelesaikan tugas dan pekerjaan.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <svg class="icon" aria-hidden="true">
-                            <use href="#icon-smile"></use>
-                        </svg>
-                    </div>
-                    <h3>Ramah</h3>
-                    <p>Mampu menjaga hubungan baik dengan orang lain.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <svg class="icon" aria-hidden="true">
-                            <use href="#icon-user-check"></use>
-                        </svg>
-                    </div>
-                    <h3>Mudah Didekati</h3>
-                    <p>Terbuka untuk berdiskusi dan bekerja sama dengan orang lain.</p>
-                </div>
-            </div>
-        </section>
-        <section id="hard-skills" class="section">
-            <div class="section-title">
-                <p>Kemampuan Teknis</p>
-                <h2>Hard Skills</h2>
-            </div>
-            <div class="hard-skills-container">
-                <!-- HTML -->
-                <div class="hard-skill-card">
-                    <div class="skill-icon">
-                        <svg class="icon" aria-hidden="true">
-                            <use href="#icon-code"></use>
-                        </svg>
-                    </div>
-                    <h3>HTML</h3>
-                    <p>Membuat struktur dan halaman website menggunakan HTML.</p>
-                </div>
-                <div class="hard-skill-card">
-                    <div class="skill-icon">
-                        <svg class="icon" aria-hidden="true">
-                            <use href="#icon-palette"></use>
-                        </svg>
-                    </div>
-                    <h3>CSS</h3>
-                    <p>Mendesain dan mengatur tampilan website menggunakan CSS.</p>
-                </div>
-                <div class="hard-skill-card">
-                    <div class="skill-icon">
-                        <svg class="icon" aria-hidden="true">
-                            <use href="#icon-zap"></use>
-                        </svg>
-                    </div>
-                    <h3>JavaScript</h3>
-                    <p>Membuat website menjadi lebih interaktif menggunakan JavaScript.</p>
-                </div>
-                <div class="hard-skill-card">
-                    <div class="skill-icon">
-                        <svg class="icon" aria-hidden="true">
-                            <use href="#icon-terminal"></use>
-                        </svg>
-                    </div>
-                    <h3>Python</h3>
-                    <p>Memahami dasar pemrograman menggunakan Python.</p>
-                </div>
-                <div class="hard-skill-card">
-                    <div class="skill-icon">
-                        <svg class="icon" aria-hidden="true">
-                            <use href="#icon-database"></use>
-                        </svg>
-                    </div>
-                    <h3>MySQL</h3>
-                    <p>Mengelola database menggunakan MySQL.</p>
-                </div>
-                <div class="hard-skill-card">
-                    <div class="skill-icon">
-                        <svg class="icon" aria-hidden="true">
-                            <use href="#icon-flame"></use>
-                        </svg>
-                    </div>
-                    <h3>Laravel</h3>
-                    <p>Membuat aplikasi web dan CRUD menggunakan Laravel.</p>
-                </div>
-                <div class="hard-skill-card">
-                    <div class="skill-icon">
-                        <svg class="icon" aria-hidden="true">
-                            <use href="#icon-blocks"></use>
-                        </svg>
-                    </div>
-                    <h3>Bootstrap</h3>
-                    <p>Menggunakan Bootstrap untuk membuat tampilan website.</p>
-                </div>
-                <div class="hard-skill-card">
-                    <div class="skill-icon">
-                        <svg class="icon" aria-hidden="true">
-                            <use href="#icon-wind"></use>
-                        </svg>
-                    </div>
-                    <h3>Tailwind</h3>
-                    <p>Menggunakan Tailwind untuk membuat tampilan website.</p>
-                </div>
-                <div class="hard-skill-card">
-                    <div class="skill-icon">
-                        <svg class="icon" aria-hidden="true">
-                            <use href="#icon-video"></use>
-                        </svg>
-                    </div>
-                    <h3>Edit Video Pendek</h3>
-                    <p>Mengedit video pendek untuk kebutuhan dokumentasi dan konten.</p>
-                </div>
-            </div>
-        </section>
-        <section id="pengalaman" class="experience-section">
-            <div class="section">
-                <div class="section-title">
-                    <p>Perjalanan Saya</p>
-                    <h2>Pengalaman</h2>
-                </div>
+
                 <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
+                    <article id="project-arduino" class="timeline-item deep-target">
+                        <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <span>Project</span>
                             <h3>Project Arduino</h3>
-                            <p>Mengerjakan projek Arduino yang bernama sensor jarak mundur dengan tim kelompok.</p>
-                           
-                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Open Project</a>
+                            <p>Mengerjakan project Arduino sensor jarak mundur bersama tim kelompok.</p>
                         </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
+                    </article>
+                    <article id="project-musik" class="timeline-item deep-target">
+                        <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <span>Project</span>
                             <h3>Website Ekstrakurikuler Musik</h3>
-                            <p>Membuat website ekstrakurikuler musik dengan tim kelompok.</p>
-                            
-                            <a href="https://github.com/Rozak27K/music-website" class="project-link" target="_blank" rel="noopener noreferrer">Open Project</a>
+                            <p>Membuat website ekstrakurikuler musik bersama tim kelompok.</p>
+                            <div class="timeline-actions">
+                                <a href="https://github.com/Rozak27K/music-website" class="text-link" target="_blank" rel="noopener noreferrer">Open Project</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
+                    </article>
+                    <article id="project-ui" class="timeline-item deep-target">
+                        <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <span>Pembelajaran</span>
                             <h3>UI Aplikasi Web</h3>
                             <p>Belajar membuat UI aplikasi web dengan HTML dan CSS.</p>
-                           
-                            <a href="https://github.com/zalfacepmel-gif/projekui" class="project-link" target="_blank" rel="noopener noreferrer">Open Project</a>
+                            <div class="timeline-actions">
+                                <a href="https://github.com/zalfacepmel-gif/projekui" class="text-link" target="_blank" rel="noopener noreferrer">Open Project</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
+                    </article>
+                    <article id="project-laravel" class="timeline-item deep-target">
+                        <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <span>Pembelajaran</span>
                             <h3>Laravel Breeze</h3>
                             <p>Belajar membuat CRUD menggunakan Laravel Breeze.</p>
-                        
-                            <a href="https://github.com/zalfacepmel-gif/laravel-blade" class="project-link" target="_blank" rel="noopener noreferrer">Open Project</a>
+                            <div class="timeline-actions">
+                                <a href="https://github.com/zalfacepmel-gif/laravel-blade" class="text-link" target="_blank" rel="noopener noreferrer">Open Project</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
+                    </article>
+                    <article id="pramuka-perlengkapan" class="timeline-item deep-target">
+                        <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <span>Organisasi</span>
                             <h3>Divisi Perlengkapan Pramuka</h3>
-                            <p>Menjadi bagian dari divisi perlengkapan organisasi Pramuka SMK N 1 Dukuh Turi.</p>
+                            <p>Menjadi bagian dari divisi perlengkapan organisasi Pramuka SMK N 1 Dukuhturi.</p>
                         </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
+                    </article>
+                    <article id="pramuka-keamanan" class="timeline-item deep-target">
+                        <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <span>Organisasi</span>
                             <h3>Divisi Keamanan Pramuka</h3>
-                            <p>Menjadi bagian dari divisi keamanan organisasi Pramuka SMK N 1 Dukuh Turi.</p>
+                            <p>Menjadi bagian dari divisi keamanan organisasi Pramuka SMK N 1 Dukuhturi.</p>
                         </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
+                    </article>
+                    <article id="pmr-dokumentasi" class="timeline-item deep-target">
+                        <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <span>Ekstrakurikuler</span>
                             <h3>Divisi Dokumentasi PMR</h3>
                             <p>Menjadi bagian dari divisi dokumentasi di ekstrakurikuler PMR.</p>
                         </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="section section-block contact-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Contact</p>
+                        <h2>Hubungi Saya</h2>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="contact" class="section">
-            <div class="section-title">
-                <p>Contact</p>
-                <h2>Hubungi Saya</h2>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Mari Terhubung</h3>
-                    <p>Jika ingin menghubungi saya untuk berdiskusi atau bekerja sama, silakan hubungi melalui kontak berikut.</p>
-                    <div class="contact-item">
-                        <span>
-                            <svg class="icon" aria-hidden="true">
-                                <use href="#icon-whatsapp"></use>
-                            </svg>
-                        </span>
-                        <div>
-                            <h4>WhatsApp</h4>
-                            <p>0823-1341-5596</p>
-                        </div>
+
+                <div class="contact-grid">
+                    <div class="contact-panel">
+                        <h3>Mari Terhubung</h3>
+                        <p>Silakan hubungi saya untuk berdiskusi, bekerja sama, atau sekadar menyapa.</p>
+                        <a class="contact-item" href="https://wa.me/6282313415596" target="_blank" rel="noopener noreferrer">
+                            <span><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg></span>
+                            <div><strong>WhatsApp</strong><small>0823-1341-5596</small></div>
+                        </a>
+                        <a class="contact-item" href="mailto:zalfacepmel@gmail.com">
+                            <span><svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg></span>
+                            <div><strong>Email</strong><small>zalfacepmel@gmail.com</small></div>
+                        </a>
+                        <a class="contact-item" href="https://www.instagram.com/zalrr__ii" target="_blank" rel="noopener noreferrer">
+                            <span><svg class="icon" aria-hidden="true"><use href="#icon-instagram"></use></svg></span>
+                            <div><strong>Instagram</strong><small>@zalrr__ii</small></div>
+                        </a>
+                        <a class="contact-item" href="https://www.tiktok.com/@rapprappii" target="_blank" rel="noopener noreferrer">
+                            <span><svg class="icon" aria-hidden="true"><use href="#icon-music"></use></svg></span>
+                            <div><strong>TikTok</strong><small>@rapprappii</small></div>
+                        </a>
                     </div>
-                    <!-- EMAIL -->
-                    <div class="contact-item">
-                        <span>
-                            <svg class="icon" aria-hidden="true">
-                                <use href="#icon-mail"></use>
-                            </svg>
-                        </span>
-                        <div>
-                            <h4>Email</h4>
-                            <p>zalfacepmel@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span>
-                            <svg class="icon" aria-hidden="true">
-                                <use href="#icon-instagram"></use>
-                            </svg>
-                        </span>
-                        <div>
-                            <h4>Instagram</h4>
-                            <p>zalrr__ii</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span>
-                            <svg class="icon" aria-hidden="true">
-                                <use href="#icon-tiktok"></use>
-                            </svg>
-                        </span>
-                        <div>
-                            <h4>TikTok</h4>
-                            <p>rapprappii</p>
-                        </div>
-                    </div>
+
+                    <form id="contactForm" class="contact-form">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" placeholder="Nama kamu" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Email kamu" required>
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" rows="6" placeholder="Tulis pesan..." required></textarea>
+                        <button type="submit" class="btn btn-primary">
+                            Kirim Pesan
+                            <svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg>
+                        </button>
+                        <p class="form-note" id="formNote" aria-live="polite"></p>
+                    </form>
                 </div>
-                <form id="contactForm" class="contact-form">
-                    <input type="text" id="nama" placeholder="Nama kamu" required>
-                    <input type="email" id="email" placeholder="Email kamu" required>
-                    <textarea id="pesan" rows="6" placeholder="Tulis pesan..." required></textarea>
-                    <button type="submit" class="btn">Kirim Pesan</button>
-                </form>
-            </div>
-        </section>
-        <footer>
+            </section>
+        </main>
+
+        <footer class="site-footer">
             <div class="footer-content">
-                <h3>Zalfa Adyarrafi</h3>
+                <a href="#home" class="footer-logo">Zalfaa Adyarrafi</a>
                 <p>Pelajar | Rekayasa Perangkat Lunak</p>
                 <div class="social">
-                    <a href="#">Instagram</a>
-                    <a href="#">TikTok</a>
-                    <a href="#">Email</a>
+                    <a href="https://www.instagram.com/zalrr__ii" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.tiktok.com/@rapprappii" target="_blank" rel="noopener noreferrer">TikTok</a>
+                    <a href="mailto:zalfacepmel@gmail.com">Email</a>
                 </div>
-                <p class="copyright">&copy; 2026 Zalfa Adyarrafi. PELAJAR SMKN 1 DUKUHTURI</p>
+                <p class="copyright">&copy; 2026 Zalfaa Adyarrafi. SMK N 1 Dukuhturi</p>
             </div>
         </footer>
+
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
         <script src="script.js"></script>
     </body>
 </html>
